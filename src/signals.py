@@ -146,15 +146,15 @@ def backtest_inventory_signal(df: pd.DataFrame, horizon_weeks: int = 4) -> dict:
     Tests whether the inventory signal predicts forward Brent price returns.
 
     Args:
-        df             — master DataFrame with signals applied
-        horizon_weeks  — how many weeks forward to measure return
+        df             - master DataFrame with signals applied
+        horizon_weeks  - how many weeks forward to measure return
 
     Returns dict with:
-        hit_rate_bullish  — % of bullish signals followed by price rise
-        hit_rate_bearish  — % of bearish signals followed by price fall
-        avg_return_bullish — average forward return on bullish weeks
-        avg_return_bearish — average forward return on bearish weeks
-        df_backtest        — full backtest DataFrame
+        hit_rate_bullish  - % of bullish signals followed by price rise
+        hit_rate_bearish  - % of bearish signals followed by price fall
+        avg_return_bullish - average forward return on bullish weeks
+        avg_return_bearish - average forward return on bearish weeks
+        df_backtest        - full backtest DataFrame
     """
     df = df.copy().dropna(subset=["brent_price", "inventory_signal_num"])
 
