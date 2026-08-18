@@ -44,10 +44,10 @@ def add_inventory_signal(df: pd.DataFrame) -> pd.DataFrame:
 
 def add_crack_signal(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Adds crack spread signal — proxy for refinery demand strength.
+    Adds crack spread signal - proxy for refinery demand strength.
 
     Columns added:
-      crack_signal — 'High' / 'Normal' / 'Low'
+      crack_signal - 'High' / 'Normal' / 'Low'
     """
     df = df.copy()
 
@@ -70,11 +70,11 @@ def add_price_signals(df: pd.DataFrame) -> pd.DataFrame:
     Adds price momentum signals.
 
     Columns added:
-      brent_ma4       — 4-week Brent moving average
-      brent_ma13      — 13-week (quarterly) moving average
-      brent_momentum  — 'Uptrend' / 'Downtrend' / 'Flat'
-      brent_yoy_pct   — year-on-year % change
-      wti_brent_spread — Brent minus WTI ($/bbl)
+      brent_ma4       - 4-week Brent moving average
+      brent_ma13      - 13-week (quarterly) moving average
+      brent_momentum  - 'Uptrend' / 'Downtrend' / 'Flat'
+      brent_yoy_pct   - year-on-year % change
+      wti_brent_spread - Brent minus WTI ($/bbl)
     """
     df = df.copy()
     df["brent_ma4"]  = df["brent_price"].rolling(4).mean()
