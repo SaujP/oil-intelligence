@@ -154,7 +154,7 @@ python-dotenv    Environment variable management
 
 **Saujas Purohit**
 MSc Geo-Energy with Machine Learning & Data Science (Merit) - Imperial College London
-BSci Earth Sciences (First Class) - Durham University
+MSci Earth Sciences (First Class) - Durham University
 Data Analyst & Petroleum Geoscientist
 
 [LinkedIn](https://linkedin.com/in/saujaspurohit) · [GitHub](https://github.com/SaujP)
