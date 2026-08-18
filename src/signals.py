@@ -180,7 +180,7 @@ def backtest_inventory_signal(df: pd.DataFrame, horizon_weeks: int = 4) -> dict:
 
 def current_snapshot(df: pd.DataFrame) -> dict:
     """
-    Returns a plain-English summary of the latest week's market state.
+    Returns a plain-English summary of the latest week market state.
     Used in the Streamlit dashboard header.
     """
     latest = df.dropna(subset=["brent_price"]).iloc[-1]
