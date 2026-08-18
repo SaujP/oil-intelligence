@@ -15,9 +15,9 @@ __pycache__/
 .vscode/
 
 # Data files (too large for git, document source instead)
-data/*.csv
-data/*.xls
-data/*.xlsx
+# data/*.csv
+# data/*.xls
+# data/*.xlsx
 
 # Outputs
 outputs/*.png
