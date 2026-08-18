@@ -108,11 +108,11 @@ def add_market_regime(df: pd.DataFrame) -> pd.DataFrame:
     Classifies the current market regime based on inventory signal + crack spread.
 
     Regime logic:
-      Bullish inventory + High crack   → 'Demand-driven bull'
-      Bullish inventory + Normal crack → 'Tightening supply'
-      Bearish inventory + Low crack    → 'Demand destruction'
-      Bearish inventory + High crack   → 'Supply shock'
-      Otherwise                        → 'Balanced'
+      Bullish inventory + High crack   - 'Demand-driven bull'
+      Bullish inventory + Normal crack - 'Tightening supply'
+      Bearish inventory + Low crack    - 'Demand destruction'
+      Bearish inventory + High crack   - 'Supply shock'
+      Otherwise                        - 'Balanced'
 
     Column added: market_regime
     """
