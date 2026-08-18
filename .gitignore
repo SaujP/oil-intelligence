@@ -1,0 +1,30 @@
+# Environment
+.env
+.project_env/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Data files (too large for git, document source instead)
+data/*.csv
+data/*.xls
+data/*.xlsx
+
+# Outputs
+outputs/*.png
+outputs/*.pdf
+
+# Mac
+.DS_Store
+
+# Models
+models/
