@@ -11,14 +11,14 @@ import numpy as np
 
 def add_inventory_signal(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Adds inventory-based supply/demand signals to the master DataFrame.
+    Adds inventory-based supply/demand signals to the master DataFrame
 
     Columns added:
-      inventory_change    — week-on-week change in crude stocks (kb)
-      inventory_ma4       — 4-week rolling average of that change
-      inventory_signal    — 'Bullish' / 'Bearish' / 'Neutral'
-      inventory_signal_num — +1 / -1 / 0 (for backtesting)
-      inventory_yoy       — year-on-year change (vs same week last year)
+      inventory_change    - week-on-week change in crude stocks (kb)
+      inventory_ma4       - 4-week rolling average of that change
+      inventory_signal    - 'Bullish' / 'Bearish' / 'Neutral'
+      inventory_signal_num - +1 / -1 / 0 (for backtesting
+      inventory_yoy       - year-on-year change (vs same week last year)
     """
     df = df.copy()
     df["inventory_change"] = df["inventory_kb"].diff()
